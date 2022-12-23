@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20221218 14:01:13.366" rpa="false" schemaversion="3">
+<suite id="s1" name="TestSitePractice" source="c:\Users\salda\mydockerimages\TestSitePractice.robot">
+<test id="s1-t1" name="Caso de Teste com PO 01: Remover Produtos do Carrinho" line="9">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<arg>options=${OPTIONS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221218 14:01:14.015" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221218 14:01:14.013" endtime="20221218 14:01:15.440"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221218 14:01:15.440" endtime="20221218 14:01:15.558"/>
+</kw>
+<status status="PASS" starttime="20221218 14:01:14.012" endtime="20221218 14:01:15.559"/>
+</kw>
+<kw name="Acessar a página home do site" library="Home">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221218 14:01:15.561" level="INFO">Opening url 'http://amazon.com'</msg>
+<status status="PASS" starttime="20221218 14:01:15.561" endtime="20221218 14:01:21.595"/>
+</kw>
+<status status="PASS" starttime="20221218 14:01:15.560" endtime="20221218 14:01:21.596"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221218 14:01:21.597" endtime="20221218 14:01:23.709"/>
+</kw>
+<status status="PASS" starttime="20221218 14:01:21.596" endtime="20221218 14:01:23.710"/>
+</kw>
+<status status="PASS" starttime="20221218 14:01:14.011" endtime="20221218 14:01:23.710"/>
+</test>
+<status status="PASS" starttime="20221218 14:01:13.380" endtime="20221218 14:01:23.712"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSitePractice">TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
